@@ -1,0 +1,18 @@
+<%=form_tag "/startups/#{@startup.id}",method: :patch do%>
+<div>
+  <%= label_tag :name, "write your startup name here"%>
+  <%= text_area_tag :name, @startup.name%>
+</div>
+<div>
+  <%= label_tag :location, "write your startup location here"%>
+  <%= text_area_tag :location, @startup.location%>
+</div>
+<div>
+  <%= label_tag :job_openings, "write the count of your job openings here"%>
+  <%= text_area_tag :job_openings, @startup.job_openings%>
+</div>
+<div>
+  <%= submit_tag "Update."%>
+</div>
+<% end %>
+

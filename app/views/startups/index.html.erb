@@ -1,0 +1,18 @@
+<table>
+<tr>
+  <th>Name</th>
+  <th>Location</th>
+  <th>Job openings</th>
+</tr>
+
+<% @startups.each do |startup| %>
+
+<ul>
+  <td>Name: <%= startup.name %></td>
+  <td>Location: <%= startup.location %></td>
+  <td>Job openings: <%= startup.job_openings %></td>
+</ul>
+
+<% end %>
+
+</table>

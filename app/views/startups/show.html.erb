@@ -1,0 +1,7 @@
+<ul>
+  <li>Name: <%= @startup.name %></li>
+  <li>Location: <%= @startup.location %></li>
+  <li>Job openings: <%= @startup.job_openings %></li>
+</ul>
+
+<%= link_to "Delete Me", "/startups/#{params[:id]}", method: :delete %>
